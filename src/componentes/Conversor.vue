@@ -13,6 +13,40 @@
     </div>
 
      <p v-if="actualizar" class="fechaA">Fecha de Actualización: {{fechaActualizada}}</p>
+
+
+      <h2>Resultados</h2>
+      <br>
+
+      <div class="table-responsive">
+        <table class="table table-dark">
+          <tr>
+            <th>Numero de Pregunta</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>A, B, D</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>A, B</td>
+          </tr>
+        </table>
+      </div>
+
   </section>
 
 </template>
