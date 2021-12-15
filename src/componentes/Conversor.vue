@@ -4,7 +4,7 @@
     <h2>Conversor a dólares</h2>
 
     <p>Ingrese monto $ : <input type="text" v-model="pesos" ></p>
-    <p>Valor del dolar en $ : <input v-if="!actualizar" type="text" v-model="valorDolar" > <input v-else type="text" v-model="valorDolarActualizado" >  - Actualizacion <input type="checkbox" v-model="actualizar"></p> 
+    <p>Valor del dólar en $ : <input v-if="!actualizar" type="text" v-model="valorDolar" > <input v-else type="text" v-model="valorDolarActualizado" >  - Actualización <input type="checkbox" v-model="actualizar"></p> 
      
 
     <div >
@@ -12,7 +12,7 @@
         <p v-else >Valor convertido: {{ pesos | toPesosAUSD(valorDolarActualizado) | currency('USD')  }}</p>
     </div>
 
-     <p v-if="actualizar" class="fechaA">Fecha de Actualizacion: {{fechaActualizada}}</p>
+     <p v-if="actualizar" class="fechaA">Fecha de Actualización: {{fechaActualizada}}</p>
   </section>
 
 </template>
